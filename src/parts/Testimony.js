@@ -51,7 +51,6 @@ export default function Testimony({ data }) {
             </div>
           </div>
         </div>
-        <div></div>
       </section>
     </Fade>
   );
