@@ -51,6 +51,7 @@
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: $primary;
+
   &:hover {
     color: $primary;
     text-decoration: none;
@@ -73,12 +74,14 @@ header {
             color: $primary;
           }
         }
+
         a {
           &.nav-link {
             letter-spacing: 1px;
             color: $gray-900;
             padding-left: 1rem;
             padding-right: 1rem;
+
             &:hover {
               text-decoration: underline;
             }
@@ -89,24 +92,27 @@ header {
   }
 }
 
-section{
+section {
   margin-bottom: 70px;
 }
-.img-cover{
-  object-fit:cover;
-  height : 100%;
+
+.img-cover {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
-.img-contain{
-  object-fit:contain;
-  height:100%;
-  width:100%;
+.img-contain {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
+
 .card {
   &.bordered {
     border: 1px solid $gray-200;
   }
+
   border-radius: 15px;
 
   .tag {
@@ -121,6 +127,7 @@ section{
     min-height: 30px;
     border-radius: 0 15px;
     font-weight: 400;
+
     span {
       font-weight: 300;
     }
@@ -135,10 +142,12 @@ section{
 
   .meta-wrapper {
     margin-top: 1rem;
+
     h5 {
       font-size: 1.125rem;
       margin-bottom: 2px;
     }
+
     span {
       font-size: 0.875rem;
     }
@@ -148,6 +157,7 @@ section{
     overflow: hidden;
     cursor: pointer;
     height: 100%;
+
     &:after {
       position: absolute;
       content: "";
@@ -192,9 +202,11 @@ section{
       .meta-wrapper {
         transform: translateY(-10px);
       }
+
       &:after {
         transform: scale(1);
       }
+
       .img-wrapper {
         transform: scale(1);
       }
@@ -202,38 +214,54 @@ section{
   }
 }
 
-.testimonial-hero,.testimonial-hero img{
+.testimonial-hero,
+.testimonial-hero img {
   width: 365px;
   height: 500px;
 }
 
-footer{
-  border-top: 1px solid $gray-200 ;
-  padding-top:50px;
+footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 50px;
 
-  .brand-tagline{
+  .brand-tagline {
     color: $gray-400;
     margin-top: 8px;
     font-weight: 300;
-    
+
   }
 
-  .list-group-item{
+  .list-group-item {
     padding: 0.3125rem 0;
     border: 0;
-    a, span {
-      color:$gray-500;
+
+    a,
+    span {
+      color: $gray-500;
       font-weight: 300;
     }
-    a{
-      @include hover-focus{
+
+    a {
+      @include hover-focus {
         color: $gray-800;
       }
     }
   }
-  .copyright{
+
+  .copyright {
     margin: 50px 0;
     font-weight: 300;
     color: $gray-500;
+  }
+}
+
+main {
+  p {
+    color: $gray-400;
+    font-weight: 300;
+  }
+
+  .iccalendar {
+    cursor: pointer;
   }
 }

@@ -6,7 +6,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 
-export default function Button(props) {
+export default function Buttonn(props) {
   const className = [props.className];
   if (props.isPrimary) className.push("btn-primary");
   if (props.isLarge) className.push("btn-lg");
@@ -72,7 +72,7 @@ export default function Button(props) {
   );
 }
 
-Button.propTypes = {
+Buttonn.propTypes = {
   type: propTypes.oneOf(["button", "link"]),
   onClick: propTypes.func,
   href: propTypes.string,

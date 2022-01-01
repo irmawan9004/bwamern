@@ -54,7 +54,7 @@ export default function Date(props) {
     >
       <div className="input-group">
         <div className="input-group-prepend bg-gray-900">
-          <span className="input-group-text">
+          <span className="input-group-text iccalendar">
             <img src={iconCalendar} alt="icon calendar" />
           </span>
         </div>

@@ -21,10 +21,12 @@ export default class Example extends Component {
           <div className="col-auto">
             <InputDate
               max={30}
-              onChange={this.handleChange}
+              suffix={" night"}
+              isSuffixPlural
               name="value"
+              onChange={this.handleChange}
               value={this.state.value}
-            />
+            ></InputDate>
           </div>
         </div>
       </div>

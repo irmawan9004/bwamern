@@ -27,7 +27,7 @@ class TestInput extends React.Component {
     );
   }
 }
-
+console.log("pp");
 const setup = () => {
   const { container } = render(<TestInput />);
   const wrapper = container.querySelector(`.input-date`);
