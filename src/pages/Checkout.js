@@ -7,7 +7,6 @@ import Numbering from "elements/Stepper/Numbering";
 import Controller from "elements/Stepper/Controller";
 import Meta from "elements/Stepper/Meta";
 import MainContent from "elements/Stepper/MainContent";
-
 import BookingInformation from "parts/BookingInformation";
 import Payment from "parts/Payment";
 import Completed from "parts/Completed";
@@ -89,7 +88,6 @@ export default class Checkout extends Component {
               />
               <Meta data={steps} current={CurrentStep} />
               <MainContent data={steps} current={CurrentStep} />
-
               {CurrentStep === "bookingInformation" && (
                 <Controller>
                   {data.firstName !== "" &&
