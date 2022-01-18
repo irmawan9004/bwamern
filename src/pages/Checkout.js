@@ -43,9 +43,8 @@ class Checkout extends Component {
   _Submit = (nextSteps) => {
     const { data } = this.state;
     const { checkout } = this.props;
-
     const payload = new FormData();
-    payload.append("firstName", data.firstName);
+    payload.append("firstNames", data.firstNamee);
     payload.append("lastName", data.lastName);
     payload.append("email", data.email);
     payload.append("phoneNumber", data.phone);
@@ -64,7 +63,7 @@ class Checkout extends Component {
   render() {
     const { data } = this.state;
     const { checkout, page } = this.props;
-    console.log(page, data);
+    console.log(data);
 
     if (!checkout)
       return (
