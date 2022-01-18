@@ -26,7 +26,6 @@ class DetailsPage extends Component {
   }
   render() {
     const { page, match } = this.props;
-    console.log(page);
 
     if (!page[match.params.id]) return null;
     const breadcrumb = [
