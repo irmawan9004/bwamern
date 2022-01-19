@@ -5,16 +5,13 @@ export default function Categories({ data }) {
   return data.map((category, index1) => {
     if (category.itemId.length === 0) return null;
     return (
-      <section className="container" key={`category-${index1}`}>
+      <section className="container">
         <Fade bottom>
           <h4 className="mb-3 font-weight-medium">{category.name}</h4>
           <div className="container-grid">
             {category.itemId.map((item, index2) => {
               return (
-                <div
-                  className="item column-3 row-1"
-                  key={`category-${index1} item-${index2}`}
-                >
+                <div className="item column-3 row-1" key={` item-${index2}`}>
                   <Fade bottom delay={300 * index2}>
                     <div className="card">
                       {item.isPopular && (
