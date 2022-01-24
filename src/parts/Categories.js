@@ -2,7 +2,7 @@ import React from "react";
 import Button from "elements/Button";
 import Fade from "react-reveal/Fade";
 export default function Categories({ data }) {
-  return data.map((category, index1) => {
+  return data.map((category) => {
     if (category.itemId.length === 0) return null;
     return (
       <section className="container">
